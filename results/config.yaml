@@ -1,0 +1,31 @@
+data:
+  dataset_name: synthetic
+  handle_outliers: true
+  n_classes: 2
+  n_features: 50
+  n_informative: 30
+  n_samples: 10000
+  scaling_method: standard
+  task_type: regression
+  test_split: 0.15
+  val_split: 0.15
+experiment_name: adaptive_feature_interaction_baseline
+model:
+  dropout_rate: 0.2
+  hidden_dims:
+  - 256
+  - 128
+  - 64
+  use_batch_norm: true
+  use_gating: false
+seed: 42
+training:
+  batch_size: 32
+  early_stopping_patience: 15
+  gradient_clip_value: 5.0
+  learning_rate: 0.001
+  lr_scheduler_type: cosine
+  num_epochs: 100
+  use_confidence_loss: false
+  use_mixed_precision: false
+  weight_decay: 0.01
