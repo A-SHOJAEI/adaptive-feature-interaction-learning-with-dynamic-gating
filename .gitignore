@@ -1,0 +1,99 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Model checkpoints and results
+models/*.pt
+models/*.pth
+checkpoints/*.pt
+checkpoints/*.pth
+results/*.json
+results/*.png
+results/*.csv
+results/*.txt
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Data
+data/*.csv
+data/*.npy
+data/*.pkl
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.bak
+
+
+# Auto-added by publisher
+# Training artifacts (auto-added by publisher)
+checkpoints/
+*.pt
+*.pth
+*.pkl
+*.h5
+*.onnx
+*.bin
+*.safetensors
+wandb/
+mlflow.db
+data/*.arrow
+data/*.parquet
+data/*.h5
+data/*.hdf5
+data/raw/
+data/processed/
+outputs/
+.venv/
+Thumbs.db

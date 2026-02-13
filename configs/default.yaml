@@ -1,0 +1,36 @@
+# Default configuration for adaptive feature interaction learning
+
+experiment_name: "adaptive_feature_interaction"
+seed: 42
+
+# Data configuration
+data:
+  dataset_name: "synthetic"
+  task_type: "regression"
+  n_samples: 10000
+  n_features: 50
+  n_informative: 30
+  n_classes: 2
+  val_split: 0.15
+  test_split: 0.15
+  scaling_method: "standard"
+  handle_outliers: true
+
+# Model configuration
+model:
+  hidden_dims: [256, 128, 64]
+  use_gating: true
+  dropout_rate: 0.2
+  use_batch_norm: true
+
+# Training configuration
+training:
+  num_epochs: 100
+  batch_size: 32
+  learning_rate: 0.001
+  weight_decay: 0.01
+  use_confidence_loss: true
+  gradient_clip_value: 5.0
+  early_stopping_patience: 15
+  lr_scheduler_type: "cosine"
+  use_mixed_precision: false
