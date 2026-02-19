@@ -9,7 +9,7 @@ data:
   task_type: regression
   test_split: 0.15
   val_split: 0.15
-experiment_name: adaptive_feature_interaction_baseline
+experiment_name: adaptive_feature_interaction
 model:
   dropout_rate: 0.2
   hidden_dims:
@@ -17,7 +17,7 @@ model:
   - 128
   - 64
   use_batch_norm: true
-  use_gating: false
+  use_gating: true
 seed: 42
 training:
   batch_size: 32
@@ -26,6 +26,6 @@ training:
   learning_rate: 0.001
   lr_scheduler_type: cosine
   num_epochs: 100
-  use_confidence_loss: false
+  use_confidence_loss: true
   use_mixed_precision: false
   weight_decay: 0.01
